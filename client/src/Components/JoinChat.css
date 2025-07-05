@@ -1,0 +1,26 @@
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #d8e6f3;
+    width: 25%;
+    height: 250px;
+    padding: 20px;
+}
+
+.input {
+    height: 30px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    background-color: #244e75;
+    color: whitesmoke;
+    font-size: 17px;
+}
