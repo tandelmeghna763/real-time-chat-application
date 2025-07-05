@@ -1,21 +1,15 @@
 const http = require('http');
 const { Server } = require('socket.io');
-const express = require('express');
-const cors = require('cors');
-const app = express();
-app.use(cors({
-    origin: 'https://one-to-one-chat-app.netlify.app',
-    methods: ['GET', 'POST'],
-    credentials: true
-}));
-const server = http.createServer(app);
-const io = new Server(server, {
+const httpserver = http.createServer();
+const server = http.createServer((req, res) => {
+    res.writeHead(200);
+    res.end("socket server is running");
+});
+const io = new Server(httpserver, {
     cors: {
         origin: "*"
     }
 });
-const PORT = process.env.PORT || 5000;
-
 let clientarr = [];
 io.on('connection', (socket) => {
     console.log('Client connected');
@@ -52,6 +46,8 @@ io.on('connection', (socket) => {
         });
     });
 });
-server.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+
+
+server.listen(9000, () => {
+    console.log(`Server running on port 9000`);
 });
