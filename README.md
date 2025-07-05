@@ -10,7 +10,6 @@ A simple and modern real-time chat application built with **React.js** and **Soc
 * 💬 **One-to-One Messaging** – Private conversations with selected users
 * 🟢 **Live User List** – See who’s online in real time
 * 🕓 **Message Timestamps** – Every message includes the time sent
-* 🎨 **Responsive UI** – Clean and mobile-friendly design
 * 🔁 **Session Persistence** – Keeps user info with `localStorage`
 
 ---
@@ -75,11 +74,11 @@ npm install
 ### ▶️ Run the App
 
 ```bash
-# Start backend (port 9000)
+# Start backend 
 cd server
 nodemon index.js
 
-# Start frontend (port 3000)
+# Start frontend 
 cd client
 npm start
 ```
@@ -88,19 +87,24 @@ npm start
 
 ## 📲 How It Works
 
-1. Open `http://localhost:3000`
+1. Open `https://one-to-one-chat-app.netlify.app/`
 2. Enter a username to join
 3. Select a user from the list to start chatting
 4. Send real-time messages privately
 
 ---
 
-## 🔧 Config Notes
+## ⚙️ Configuration
+🖥️ Frontend
+Runs on: https://one-to-one-chat-app.netlify.app/
 
-* **Backend Port**: `9000`
-* **Frontend Port**: `3000`
-* **WebSocket**: Connected via `Socket.IO`
+🚀 Backend
+Runs on: https://socket-server-4lo3.onrender.com
 
+🔌 WebSocket (Socket.IO)
+Socket.IO is used for real-time communication.
+
+The frontend connects to the backend Socket.IO server.
 ---
 
 ## ✨ Future Ideas
