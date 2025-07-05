@@ -4,7 +4,7 @@ A simple and modern real-time chat application built with **React.js** and **Soc
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
 * **Username Login** – Join using a simple username
 * **One-to-One Messaging** – Private conversations with selected users
@@ -14,7 +14,7 @@ A simple and modern real-time chat application built with **React.js** and **Soc
 
 ---
 
-## ⚙️ Tech Stack
+##  Tech Stack
 
 ### Frontend (React)
 
@@ -32,7 +32,7 @@ A simple and modern real-time chat application built with **React.js** and **Soc
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 ├── client/                 # React frontend application
@@ -54,7 +54,7 @@ A simple and modern real-time chat application built with **React.js** and **Soc
 
 ---
 
-## 🛠️ Getting Started
+##  Getting Started
 
 ### Install Dependencies
 
@@ -71,7 +71,7 @@ cd client
 npm install
 ```
 
-### ▶️ Run the App
+###  Run the App
 
 ```bash
 # Start backend 
@@ -85,7 +85,7 @@ npm start
 
 ---
 
-## 📲 How It Works
+##  How It Works
 
 1. Open `https://one-to-one-chat-app.netlify.app/`
 2. Enter a username to join
@@ -94,7 +94,7 @@ npm start
 
 ---
 
-## ⚙️ Configuration
+##  Configuration
 Frontend
 Runs on: https://one-to-one-chat-app.netlify.app/
 
@@ -107,7 +107,7 @@ Socket.IO is used for real-time communication.
 The frontend connects to the backend Socket.IO server.
 ---
 
-## ✨ Future Ideas
+##  Future Ideas
 
 * Group chats
 * File sharing
