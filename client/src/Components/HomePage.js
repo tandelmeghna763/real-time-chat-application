@@ -33,7 +33,16 @@ function HomePage() {
 
     }, []);
     const username = localStorage.getItem("Name of User");
+    const handleKeyDown = event => {
+        if (event.keyCode === 13) {
+            sendmsg()
+        }
+    };
     const sendmsg = () => {
+        if (!selectedUser) {
+            alert("Please select a user to send a message.");
+            return;
+        }
         const timestamp = moment().format('hh:mm A');
         const newMsg = {
             sender: username,
@@ -75,11 +84,14 @@ function HomePage() {
                 <div>
                     <div className="chatuser">
                         {
-                            setSelectedUser && (
+                            selectedUser ? (
                                 <h3 style={{ margin: '0' }}>{selectedUser}</h3>
+                            ) : (
+                                <h3 style={{ margin: '0', color: '#888' }}>Select Uuser For Chat</h3>
                             )
                         }
                     </div>
+
                     <div className="displaymsg">
                         {displaymsg.map((m, i) => {
                             const isSender = m.sender === username;
@@ -95,7 +107,7 @@ function HomePage() {
                     </div>
 
                     <div className="msg">
-                        <input type="text" className="msginput" value={msg} placeholder="Enter Your Message Here" onChange={(e) => setMsg(e.target.value)}></input>
+                        <input type="text" className="msginput" value={msg} placeholder="Enter Your Message Here" onKeyDown={handleKeyDown} onChange={(e) => setMsg(e.target.value)}></input>
                         <BiSend style={{ backgroundColor: ' #4c8df5', fontSize: "42px", borderRadius: "10px" }} onClick={() => sendmsg()} />
                     </div>
                 </div>

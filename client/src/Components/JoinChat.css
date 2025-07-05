@@ -1,16 +1,35 @@
-.card {
+body {
+    background-color: #12131f;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
     flex-direction: column;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background-color: #d8e6f3;
-    width: 25%;
-    height: 250px;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #232438;
+    width: 90%;
+    max-width: 400px;
     padding: 20px;
+    color: white;
+    border-radius: 12px;
+    box-sizing: border-box;
 }
 
 .input {
-    height: 30px;
+    height: 35px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
 .button {
@@ -19,8 +38,33 @@
     align-items: center;
     margin-top: 20px;
     width: 100%;
-    height: 40px;
-    background-color: #244e75;
+    height: 45px;
+    background-color: #4c8df5;
     color: whitesmoke;
     font-size: 17px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #3b7ee0;
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .input {
+        font-size: 0.95rem;
+        height: 32px;
+    }
+
+    .button {
+        height: 40px;
+        font-size: 16px;
+    }
 }
