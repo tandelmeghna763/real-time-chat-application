@@ -87,7 +87,7 @@ function HomePage() {
                             selectedUser ? (
                                 <h3 style={{ margin: '0' }}>{selectedUser}</h3>
                             ) : (
-                                <h3 style={{ margin: '0', color: '#888' }}>Select Uuser For Chat</h3>
+                                <h3 style={{ margin: '0', color: '#888' }}>Select User For Chat</h3>
                             )
                         }
                     </div>
