@@ -40,7 +40,6 @@ io.on('connection', (socket) => {
         console.log("List of users for match id", clientarr);
         const receivers = item?.receiver;
         if (!receivers) return;
-
         const receiverList = Array.isArray(receivers) ? receivers : [receivers];
         console.log("receiver", receiverList);
 
