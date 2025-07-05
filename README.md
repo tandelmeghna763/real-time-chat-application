@@ -76,7 +76,7 @@ npm install
 ```bash
 # Start backend 
 cd server
-nodemon index.js
+npm start
 
 # Start frontend 
 cd client
