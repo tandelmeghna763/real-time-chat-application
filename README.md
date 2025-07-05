@@ -115,6 +115,6 @@ The frontend connects to the backend Socket.IO server.
 
 ---
 
-**Built with ❤️ using React & Socket.IO**
+**Built with React & Socket.IO**
 
 ---
