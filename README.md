@@ -6,11 +6,11 @@ A simple and modern real-time chat application built with **React.js** and **Soc
 
 ## 🚀 Key Features
 
-**Username Login** – Join using a simple username
-**One-to-One Messaging** – Private conversations with selected users
-**Live User List** – See who’s online in real time
-**Message Timestamps** – Every message includes the time sent
-**Session Persistence** – Keeps user info with `localStorage`
+* **Username Login** – Join using a simple username
+* **One-to-One Messaging** – Private conversations with selected users
+* **Live User List** – See who’s online in real time
+* **Message Timestamps** – Every message includes the time sent
+* **Session Persistence** – Keeps user info with `localStorage`
 
 ---
 
