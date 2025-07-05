@@ -60,7 +60,7 @@ A simple and modern real-time chat application built with **React.js** and **Soc
 
 ```bash
 # Clone the repo
-git clone <repo-url>
+git clone https://github.com/tandelmeghna763/real-time-chat-application.git
 
 # Install backend dependencies
 cd server
